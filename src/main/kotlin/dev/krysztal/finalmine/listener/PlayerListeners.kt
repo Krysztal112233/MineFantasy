@@ -1,7 +1,6 @@
 package dev.krysztal.finalmine.listener
 
 import dev.krysztal.finalmine.events.PlayerJobChangeEvent
-import dev.krysztal.finalmine.skill.whm.Regen
 import dev.krysztal.finalmine.utils.RunnerUtils
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
@@ -25,8 +24,7 @@ class PlayerListeners : Listener {
                     event.player.setCooldown(v!!.type, 50)
                 }
         }.run()
-        event.player.maxHealth = 60.0
-        Regen().effect(event.player)
+
     }
 
     @EventHandler
