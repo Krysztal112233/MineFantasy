@@ -1,0 +1,7 @@
+name: Skills
+version: '${version}'
+main: dev.krysztal.skills.SkillsMain
+api-version: 1.19
+prefix: KrysztalSkills
+authors: [ Krysztal ]
+description: A plugin that implements multiple skills

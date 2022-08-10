@@ -1,0 +1,7 @@
+name: FinalMine
+version: '${version}'
+main: dev.krysztal.finalmine.FinalMineMain
+api-version: 1.19
+prefix: FinalMine
+authors: [ Krysztal ]
+description: A plugin that implements some FF XIV jobs and skills in Minecraft
