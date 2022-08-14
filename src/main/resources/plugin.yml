@@ -1,7 +1,7 @@
-name: FinalMine
+name: MineFantasy
 version: '${version}'
-main: dev.krysztal.finalmine.FinalMineMain
+main: dev.krysztal.minefantasy.MineFantasyMain
 api-version: 1.19
-prefix: FinalMine
+prefix: MineFantasy
 authors: [ Krysztal ]
 description: A plugin that implements some FF XIV jobs and skills in Minecraft
