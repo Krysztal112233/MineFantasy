@@ -1,12 +1,12 @@
 package dev.krysztal.minefantasy.parties
 
-import dev.krysztal.minefantasy.interfaces.IParty
+import dev.krysztal.minefantasy.foundation.interfaces.Party
 import dev.krysztal.minefantasy.parties.impl.PartyLocal
 import java.util.*
 
 object Party {
-    private var partyInstance: IParty? = null
-    private val instance: IParty?
+    private var partyInstance: Party? = null
+    private val instance: Party?
         get() {
             if (partyInstance == null) partyInstance = PartyLocal()
             return partyInstance

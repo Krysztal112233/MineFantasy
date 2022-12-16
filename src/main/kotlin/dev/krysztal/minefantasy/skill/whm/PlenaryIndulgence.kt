@@ -1,3 +1,3 @@
 package dev.krysztal.minefantasy.skill.whm
 
-class PlenaryIndulgence 
+class PlenaryIndulgence

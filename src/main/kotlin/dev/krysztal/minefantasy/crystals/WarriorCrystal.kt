@@ -1,30 +1,20 @@
 package dev.krysztal.minefantasy.crystals
 
-import dev.krysztal.minefantasy.crystals.gauge.GaugeSlot
-import dev.krysztal.minefantasy.crystals.gauge.GaugeSlots
+import dev.krysztal.minefantasy.foundation.GaugeSlot
+import dev.krysztal.minefantasy.foundation.GaugeSlots
 
-class WarriorCrystal : Crystal() {
-    object WarriorSlots {
-        const val Defiance = "Defiance"
-        const val BeastGauge = "Beast Gauge"
-    }
-
-    init {
-        val s: MutableMap<String?, GaugeSlot?> = linkedMapOf(
-            Pair(WarriorSlots.Defiance, GaugeSlot.build {
-                name = WarriorSlots.Defiance
+class WarriorCrystal : Crystal(
+    gaugeName = "The Beast",
+    gaugeSlots = GaugeSlots(
+        linkedMapOf(
+            Pair("Defiance", GaugeSlot.build {
+                name = "Defiance"
                 max = 1
             }),
-            Pair(WarriorSlots.BeastGauge, GaugeSlot.build {
-                name = WarriorSlots.BeastGauge
+            Pair("Beast Gauge", GaugeSlot.build {
+                name = "Beast Gauge"
                 max = 100
             })
         )
-        super.gaugeSlots = GaugeSlots(s)
-        super.gaugeID = Companion.GAUGE_ID
-    }
-
-    companion object {
-        private const val GAUGE_ID = "The Beast"
-    }
-}
+    )
+)

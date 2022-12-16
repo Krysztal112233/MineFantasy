@@ -1,34 +1,24 @@
 package dev.krysztal.minefantasy.crystals
 
-import dev.krysztal.minefantasy.crystals.gauge.GaugeSlot
-import dev.krysztal.minefantasy.crystals.gauge.GaugeSlots
+import dev.krysztal.minefantasy.foundation.GaugeSlot
+import dev.krysztal.minefantasy.foundation.GaugeSlots
 
-class WhiteMageCrystal : Crystal() {
-    object WhiteMageSlots {
-        const val LILY = "Lily"
-        const val BLOOD_LILY = "Blood Lily"
-    }
-
-    init {
-        val s: MutableMap<String?, GaugeSlot?> = linkedMapOf(
+class WhiteMageCrystal : Crystal(
+    gaugeName = "Secret of Lily",
+    gaugeSlots = GaugeSlots(
+        linkedMapOf(
             Pair(
-                WhiteMageSlots.LILY, GaugeSlot.build
+                "Lily", GaugeSlot.build
                 {
-                    name = WhiteMageSlots.LILY
+                    name = "Lily"
                     max = 3
                 }),
             Pair(
-                WhiteMageCrystal.WhiteMageSlots.BLOOD_LILY, GaugeSlot.build
+                "Blood Lily", GaugeSlot.build
                 {
-                    name = WhiteMageCrystal.WhiteMageSlots.BLOOD_LILY
+                    name = "Blood Lily"
                     max = 3
                 })
         )
-        super.gaugeSlots = GaugeSlots(s)
-        super.gaugeID = WhiteMageCrystal.GAUGE_ID
-    }
-
-    companion object {
-        private const val GAUGE_ID = "Secret of Lily"
-    }
-}
+    )
+)

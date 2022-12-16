@@ -1,21 +1,6 @@
 package dev.krysztal.minefantasy.skill.whm
 
-import dev.krysztal.minefantasy.skill.common.AreaOfEffect
-import dev.krysztal.minefantasy.utils.FilterUtils
-import dev.krysztal.minefantasy.utils.ParticleUtils
-import org.bukkit.entity.LivingEntity
-import org.bukkit.entity.Player
+import dev.krysztal.minefantasy.foundation.skills.aoe.Damage
 
-/**
- * 豪圣
- */
-class HolyIII : AreaOfEffect() {
-    init {
-        super.radius = 15
-        super.addApplyFilters(FilterUtils.forMonster)
-        super.setEffect { entity: LivingEntity?, player: Player? ->
-            ParticleUtils.spawnHurtParticle(entity)
-            entity?.damage(3.5, player)
-        }
-    }
-}
+
+class HolyIII : Damage(mana = 500, damage = 6.5)

@@ -9,27 +9,27 @@ internal class WhiteMageCrystalTest {
     @DisplayName("Use Blood Lily")
     fun testUseBloodLily() {
         var crystal = WhiteMageCrystal()
-        crystal.decrease(WhiteMageCrystal.WhiteMageSlots.BLOOD_LILY, 1)
-        Assertions.assertEquals(0, crystal.getCurrentInSlot(WhiteMageCrystal.WhiteMageSlots.BLOOD_LILY))
+        crystal.decrease("Blood Lily", 1)
+        Assertions.assertEquals(0, crystal.getCurrentInSlot("Blood Lily"))
         crystal = WhiteMageCrystal()
-        crystal.increase(WhiteMageCrystal.WhiteMageSlots.BLOOD_LILY, 3)
-        Assertions.assertEquals(3, crystal.getCurrentInSlot(WhiteMageCrystal.WhiteMageSlots.BLOOD_LILY))
+        crystal.increase("Blood Lily", 3)
+        Assertions.assertEquals(3, crystal.getCurrentInSlot("Blood Lily"))
         crystal = WhiteMageCrystal()
-        crystal.increase(WhiteMageCrystal.WhiteMageSlots.BLOOD_LILY, 4)
-        Assertions.assertEquals(3, crystal.getCurrentInSlot(WhiteMageCrystal.WhiteMageSlots.BLOOD_LILY))
+        crystal.increase("Blood Lily", 4)
+        Assertions.assertEquals(3, crystal.getCurrentInSlot("Blood Lily"))
     }
 
     @Test
     @DisplayName("Use Lily")
     fun testUseLily() {
         var crystal = WhiteMageCrystal()
-        crystal.decrease(WhiteMageCrystal.WhiteMageSlots.LILY, 1)
-        Assertions.assertEquals(0, crystal.getCurrentInSlot(WhiteMageCrystal.WhiteMageSlots.LILY))
+        crystal.decrease("Lily", 1)
+        Assertions.assertEquals(0, crystal.getCurrentInSlot("Lily"))
         crystal = WhiteMageCrystal()
-        crystal.increase(WhiteMageCrystal.WhiteMageSlots.LILY, 3)
-        Assertions.assertEquals(3, crystal.getCurrentInSlot(WhiteMageCrystal.WhiteMageSlots.LILY))
+        crystal.increase("Lily", 3)
+        Assertions.assertEquals(3, crystal.getCurrentInSlot("Lily"))
         crystal = WhiteMageCrystal()
-        crystal.increase(WhiteMageCrystal.WhiteMageSlots.LILY, 4)
-        Assertions.assertEquals(3, crystal.getCurrentInSlot(WhiteMageCrystal.WhiteMageSlots.LILY))
+        crystal.increase("Lily", 4)
+        Assertions.assertEquals(3, crystal.getCurrentInSlot("Lily"))
     }
 }

@@ -1,8 +1,8 @@
-package dev.krysztal.minefantasy.interfaces
+package dev.krysztal.minefantasy.foundation.interfaces
 
 import java.util.*
 
-interface IParty {
+interface Party {
     fun joinParty(party: String, uuid: UUID)
     fun removeMember(party: String, member: UUID)
     fun removeMember(member: UUID)

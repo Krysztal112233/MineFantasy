@@ -1,7 +1,7 @@
-package dev.krysztal.minefantasy.crystals.gauge
+package dev.krysztal.minefantasy.foundation
 
 
-class GaugeSlot {
+class GaugeSlot private constructor(builder: Builder) {
 
 
     var name: String = "null"
@@ -13,7 +13,7 @@ class GaugeSlot {
             if (value >= min) field = value
         }
 
-    private constructor(builder: Builder) {
+    init {
         this.name = builder.name
         this.max = builder.max
         this.min = builder.min
@@ -33,3 +33,8 @@ class GaugeSlot {
         fun build() = GaugeSlot(this)
     }
 }
+
+class GaugeSlots(
+    val slots: MutableMap<String?, GaugeSlot?>,
+    private var slotCount: Int = slots.size
+) : LinkedHashMap<String?, GaugeSlot?>(slots)

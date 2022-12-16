@@ -1,27 +1,17 @@
 package dev.krysztal.minefantasy.crystals
 
-import dev.krysztal.minefantasy.crystals.gauge.GaugeSlot
-import dev.krysztal.minefantasy.crystals.gauge.GaugeSlots
+import dev.krysztal.minefantasy.foundation.GaugeSlot
+import dev.krysztal.minefantasy.foundation.GaugeSlots
 
-class EmptyCrystal internal constructor() : Crystal() {
-    object EmptySlot {
-        const val EMPTY = "Empty"
-    }
-
-    init {
-        val s: MutableMap<String?, GaugeSlot?> = linkedMapOf(
+class EmptyCrystal : Crystal(
+    gaugeName = "Empty", gaugeSlots = GaugeSlots(
+        linkedMapOf(
             Pair(
-                EmptySlot.EMPTY,
+                "Empty Crystal",
                 GaugeSlot.build {
-                    name = EmptySlot.EMPTY
+                    name = "Empty Slots"
                     max = 1
                 })
         )
-        super.gaugeSlots = GaugeSlots(s)
-        super.gaugeID = GAUGE_ID
-    }
-
-    companion object {
-        const val GAUGE_ID = "Empty"
-    }
-}
+    )
+)

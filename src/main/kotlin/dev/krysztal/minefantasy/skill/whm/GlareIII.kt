@@ -1,6 +1,6 @@
 package dev.krysztal.minefantasy.skill.whm
 
-/**
- * 闪灼
- */
-class GlareIII 
+import dev.krysztal.minefantasy.foundation.skills.direct.Damage
+
+
+class GlareIII : Damage(mana = 400, damage = 20)

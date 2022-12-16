@@ -1,4 +1,4 @@
-package dev.krysztal.minefantasy.events
+package dev.krysztal.minefantasy.foundation.events
 
 import org.bukkit.event.Event
 import org.bukkit.event.HandlerList

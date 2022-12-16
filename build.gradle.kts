@@ -23,7 +23,7 @@ repositories {
 dependencies {
 
 
-    compileOnly("io.papermc.paper:paper-api:1.19-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT")
 
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
 
@@ -59,4 +59,8 @@ compileKotlin.kotlinOptions {
 
 compileTestKotlin.kotlinOptions {
     jvmTarget = "1.8"
+}
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
 }

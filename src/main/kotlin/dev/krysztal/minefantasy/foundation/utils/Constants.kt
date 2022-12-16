@@ -1,4 +1,4 @@
-package dev.krysztal.minefantasy.utils
+package dev.krysztal.minefantasy.foundation.utils
 
 class Constants {
     object MetadataKeys {

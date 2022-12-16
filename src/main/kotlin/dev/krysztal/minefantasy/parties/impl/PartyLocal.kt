@@ -1,13 +1,13 @@
 package dev.krysztal.minefantasy.parties.impl
 
-import dev.krysztal.minefantasy.interfaces.IParty
+import dev.krysztal.minefantasy.foundation.interfaces.Party
 
 import java.util.*
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.ConcurrentMap
 import java.util.function.Consumer
 
-class PartyLocal : IParty {
+class PartyLocal : Party {
 
     private val parties: ConcurrentMap<String, MutableSet<UUID>?> = ConcurrentHashMap()
     override fun joinParty(party: String, uuid: UUID) {
