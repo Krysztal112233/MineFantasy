@@ -17,6 +17,7 @@ repositories {
     mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
     maven("https://oss.sonatype.org/content/groups/public/")
+    maven("https://jitpack.io")
 }
 
 
@@ -30,6 +31,8 @@ dependencies {
     testImplementation(kotlin("test"))
     implementation(kotlin("stdlib"))
     shadow(kotlin("stdlib"))
+
+    implementation("dev.krysztal:RAIDCore:1.1.0")
 }
 
 tasks.test {
