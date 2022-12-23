@@ -1,7 +1,7 @@
 package dev.krysztal.minefantasy.skill.whm
 
-import dev.krysztal.minefantasy.foundation.skills.SkillType
-import dev.krysztal.minefantasy.foundation.skills.direct.Heal
+import dev.krysztal.minefantasy.foundation.skill.SkillType
+import dev.krysztal.minefantasy.foundation.skill.direct.Heal
 import dev.krysztal.minefantasy.foundation.toTickDuration
 
 /**

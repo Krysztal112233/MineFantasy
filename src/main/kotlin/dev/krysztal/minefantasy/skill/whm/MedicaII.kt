@@ -1,8 +1,8 @@
 package dev.krysztal.minefantasy.skill.whm
 
-import dev.krysztal.minefantasy.foundation.skills.AreaOfEffect
-import dev.krysztal.minefantasy.foundation.skills.SkillType
-import dev.krysztal.minefantasy.foundation.utils.ParticleUtils
+import dev.krysztal.minefantasy.foundation.skill.AreaOfEffect
+import dev.krysztal.minefantasy.foundation.skill.SkillType
+import dev.krysztal.minefantasy.foundation.util.ParticleUtils
 import dev.krysztal.minefantasy.foundation.addPotionEffect
 import dev.krysztal.minefantasy.foundation.partyFilter
 import org.bukkit.entity.LivingEntity

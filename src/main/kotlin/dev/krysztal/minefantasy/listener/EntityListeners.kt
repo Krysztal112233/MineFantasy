@@ -1,7 +1,7 @@
 package dev.krysztal.minefantasy.listener
 
 import dev.krysztal.minefantasy.MineFantasyMain
-import dev.krysztal.minefantasy.foundation.utils.Constants
+import dev.krysztal.minefantasy.foundation.util.Constants
 import org.bukkit.entity.SpawnCategory
 import org.bukkit.event.EventHandler
 import org.bukkit.event.EventPriority

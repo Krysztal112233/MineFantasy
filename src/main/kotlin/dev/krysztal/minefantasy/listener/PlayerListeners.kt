@@ -1,6 +1,6 @@
 package dev.krysztal.minefantasy.listener
 
-import dev.krysztal.minefantasy.foundation.events.PlayerJobChangeEvent
+import dev.krysztal.minefantasy.foundation.event.PlayerJobChangeEvent
 import dev.krysztal.minefantasy.foundation.toRunner
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener

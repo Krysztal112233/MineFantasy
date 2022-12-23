@@ -1,6 +1,6 @@
 package dev.krysztal.minefantasy.skill.whm
 
-import dev.krysztal.minefantasy.foundation.skills.aoe.Heal
+import dev.krysztal.minefantasy.foundation.skill.aoe.Heal
 
 open class Medica : Heal(
     mana = 800,

@@ -1,6 +1,6 @@
 package dev.krysztal.minefantasy.skill.whm
 
-import dev.krysztal.minefantasy.foundation.skills.AreaOfEffect
+import dev.krysztal.minefantasy.foundation.skill.AreaOfEffect
 
 /**
  * 苦难之心

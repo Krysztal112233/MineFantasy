@@ -23,7 +23,7 @@ fun Double.toTickDuration(): Double {
 fun BukkitRunner.toRunner(): BukkitRunnable {
     return object : BukkitRunnable() {
         override fun run() {
-            this.run { }
+            this@toRunner.run { }
         }
     }
 }
