@@ -6,12 +6,12 @@ import org.bukkit.potion.PotionEffect
 import org.bukkit.potion.PotionEffectType
 import org.bukkit.scheduler.BukkitRunnable
 
-fun LivingEntity?.addPotionEffect(type: PotionEffectType?, duration: Int, amplifier: Int) {
-    if (this?.hasPotionEffect(type!!) == true) {
-        type?.let { this.removePotionEffect(it) }
+fun LivingEntity?.addPotionEffect(effectType: PotionEffectType?, duration: Int, amplifier: Int) {
+    if (this?.hasPotionEffect(effectType!!) == true) {
+        effectType?.let { this.removePotionEffect(it) }
     }
 
-    type?.let { PotionEffect(it, duration, amplifier, false, true, true) }
+    effectType?.let { PotionEffect(it, duration, amplifier, false, true, true) }
         ?.let { this?.addPotionEffect(it) }
 }
 
