@@ -1,6 +1,8 @@
-package dev.krysztal.minefantasy.foundation.skill
+package dev.krysztal.minefantasy.foundation.skill.direct
 
 import dev.krysztal.minefantasy.foundation.EffectApplier
+import dev.krysztal.minefantasy.foundation.skill.BaseSkill
+import dev.krysztal.minefantasy.foundation.skill.SkillType
 import org.bukkit.entity.LivingEntity
 import org.bukkit.entity.Player
 

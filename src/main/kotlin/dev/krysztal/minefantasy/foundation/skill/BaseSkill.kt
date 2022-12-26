@@ -11,7 +11,8 @@ abstract class BaseSkill(
     open val radius: Int = 8,
     open val effect: EffectApplier = { _, _ -> },
     open val skillType: SkillType = SkillType.Magic,
-    open val coolDown: Double = 2.5 * 20
+    open val coolDown: Double = 2.5 * 20,
+    open val cdType: CoolDownType = CoolDownType.Generic,
 ) {
     abstract fun effect(player: Player)
 }

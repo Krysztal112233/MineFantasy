@@ -1,10 +1,10 @@
 package dev.krysztal.minefantasy.foundation.skill.aoe
 
 import dev.krysztal.minefantasy.foundation.addPotionEffect
-import dev.krysztal.minefantasy.foundation.skill.AreaOfEffect
+import dev.krysztal.minefantasy.foundation.decMana
+import dev.krysztal.minefantasy.foundation.playerFilter
 import dev.krysztal.minefantasy.foundation.toTickDuration
 import dev.krysztal.minefantasy.foundation.util.ParticleUtils
-import dev.krysztal.minefantasy.foundation.playerFilter
 import org.bukkit.entity.LivingEntity
 import org.bukkit.entity.Player
 import org.bukkit.potion.PotionEffectType
@@ -29,4 +29,9 @@ class HealOverTick(
             livingEntity!!.health = (livingEntity.health + heal).coerceAtMost(livingEntity.maxHealth)
             livingEntity.addPotionEffect(PotionEffectType.REGENERATION, duration, amplifier)
         }
-    )
+    ) {
+    override fun effect(player: Player) {
+        super.effect(player)
+        player.decMana(this.mana)
+    }
+}

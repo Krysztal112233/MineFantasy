@@ -1,26 +1,21 @@
 # FinalMine
 
-Bring MMORPG experience like FF XIV into Minecraft.
-
-In this plugin,theres all the MMORPG
+MineFantasy is a Final Fantasy 14 flavor MMORPG plugin,
+which provides a skill system similar to the Final Fantasy 14 .
 
 ## Implementation jobs and skills
 
 The implement should be in Minecraft ways.
 
-### White Mage(WHM)
+### Healers
 
-- [x] Cure
-- [x] CureII
-- [x] CureIII
-- [x] Glare
-- [x] GlareIII
-- [x] Medica
-- [x] MedicaII
-- [x] Regen
+- [ ] White Mage
 
-### Red Mage(RDM)
+### Tanks
 
-### Gun Breaker(GNB)
+- [ ] Gun Breaker
+- [ ] Warrior
 
-### WarriorF
+### DPS
+
+- [ ] Red Mage

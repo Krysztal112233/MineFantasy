@@ -1,7 +1,7 @@
 package dev.krysztal.minefantasy.foundation.skill.aoe
 
+import dev.krysztal.minefantasy.foundation.decMana
 import dev.krysztal.minefantasy.foundation.monsterFilter
-import dev.krysztal.minefantasy.foundation.skill.AreaOfEffect
 import dev.krysztal.minefantasy.foundation.skill.SkillType
 import dev.krysztal.minefantasy.foundation.toTickDuration
 import dev.krysztal.minefantasy.foundation.util.ParticleUtils
@@ -26,4 +26,9 @@ open class Damage(
         ParticleUtils.spawnHurtParticle(entity)
         entity?.damage(damage, player)
     }
-)
+) {
+    override fun effect(player: Player) {
+        super.effect(player)
+        player.decMana(this.mana)
+    }
+}

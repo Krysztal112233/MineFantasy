@@ -1,7 +1,7 @@
 package dev.krysztal.minefantasy.foundation.skill.direct
 
+import dev.krysztal.minefantasy.foundation.decMana
 import dev.krysztal.minefantasy.foundation.playerFilter
-import dev.krysztal.minefantasy.foundation.skill.DirectDamage
 import dev.krysztal.minefantasy.foundation.skill.SkillType
 import dev.krysztal.minefantasy.foundation.toTickDuration
 import dev.krysztal.minefantasy.foundation.util.ParticleUtils
@@ -24,4 +24,9 @@ open class Heal(
         ParticleUtils.spawnCureParticle(entity)
         entity!!.health = (entity.health + heal).coerceAtMost(entity.maxHealth)
     }
-)
+) {
+    override fun effect(player: Player) {
+        super.effect(player)
+        player.decMana(this.mana)
+    }
+}

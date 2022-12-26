@@ -1,6 +1,6 @@
 package dev.krysztal.minefantasy.skill.whm
 
-import dev.krysztal.minefantasy.foundation.skill.AreaOfEffect
+import dev.krysztal.minefantasy.foundation.skill.aoe.AreaOfEffect
 import dev.krysztal.minefantasy.foundation.skill.SkillType
 import dev.krysztal.minefantasy.foundation.util.ParticleUtils
 import dev.krysztal.minefantasy.foundation.addPotionEffect
