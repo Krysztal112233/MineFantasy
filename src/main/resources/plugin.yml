@@ -5,3 +5,14 @@ api-version: 1.19
 prefix: MineFantasy
 authors: [ Krysztal ]
 description: A plugin that implements some FF XIV jobs and skills in Minecraft
+
+commands:
+  mana:
+    usage: "Usage: /<command> [set|get] [player] [int]"
+    description: "Allows you to set a certain player's mana"
+    permission: minefantasy.command.mana
+
+permissions:
+  minefantasy.command.mana:
+    description: Allows you to use the command /mana
+    default: op
