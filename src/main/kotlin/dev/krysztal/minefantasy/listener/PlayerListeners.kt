@@ -15,6 +15,7 @@ class PlayerListeners : Listener {
         val mainHandMaterial = event.player.inventory.itemInMainHand.type
         val offHandMaterial = event.player.inventory.itemInOffHand.type
         val isAir = mainHandMaterial.isAir && offHandMaterial.isAir
+        
         if (event.player.getCooldown(mainHandMaterial) != 0
             || event.player.getCooldown(offHandMaterial) != 0
             || isAir

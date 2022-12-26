@@ -1,7 +1,12 @@
 package dev.krysztal.minefantasy.foundation
 
+import dev.krysztal.minefantasy.MineFantasyMain
+import dev.krysztal.minefantasy.foundation.util.Constants
 import org.bukkit.Bukkit
+import org.bukkit.entity.Entity
 import org.bukkit.entity.LivingEntity
+import org.bukkit.entity.SpawnCategory
+import org.bukkit.metadata.FixedMetadataValue
 import org.bukkit.potion.PotionEffect
 import org.bukkit.potion.PotionEffectType
 import org.bukkit.scheduler.BukkitRunnable
@@ -28,3 +33,10 @@ fun BukkitRunner.toRunner(): BukkitRunnable {
     }
 }
 
+fun Entity.toEnemy(): Unit {
+    if (this.spawnCategory == SpawnCategory.MONSTER)
+        this.setMetadata(
+            Constants.MetadataKeys.IS_ENEMY,
+            FixedMetadataValue(MineFantasyMain, true)
+        )
+}
