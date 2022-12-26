@@ -1,4 +1,4 @@
-# FinalMine
+# MineFantasy
 
 MineFantasy is a Final Fantasy 14 flavor MMORPG plugin,
 which provides a skill system similar to the Final Fantasy 14 .
